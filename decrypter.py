@@ -1,7 +1,7 @@
 # Decryption Script
 from cryptography.fernet import Fernet
 
-key = 'JKxOVROyEUfsMsON6-qf88EutwXN1f-0VCrjwVTPXQ4='
+key = ''
 print("Key : %s", key)
 
 input_file = 'encrypted/config.ini'
