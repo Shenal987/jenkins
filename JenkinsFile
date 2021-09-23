@@ -15,6 +15,9 @@ pipeline {
         stage('DEPLOY') {
             steps {
                 println "workspace : ${WORKSPACE}"
+                withCredentials([usernamePassword(credentialsId: 'AWS_CREDENTIALS', passwordVariable: 'AWS_PASSWORD', usernameVariable: 'AWS_USER')]) {
+                     println "userName : ${AWS_USER}"
+                    }
             }
         }
     }
