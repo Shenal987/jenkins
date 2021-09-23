@@ -14,7 +14,7 @@ pipeline {
         }
         stage('DEPLOY') {
             steps {
-                pwd()
+                println "workspace : ${WORKSPACE}"
             }
         }
     }
